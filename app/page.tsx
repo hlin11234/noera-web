@@ -52,12 +52,12 @@ const customers = [
   {
     code: "SHOP",
     title: "Sharpening shops",
-    body: "Automate part of the knife workload and increase daily capacity.",
+    body: "Move standard knives through a repeatable process and increase daily capacity.",
   },
   {
     code: "KITCHEN",
     title: "Restaurants and professional kitchens",
-    body: "Reduce delays and keep prep tools working at a higher standard.",
+    body: "Keep prep tools sharp without waiting on outside sharpening cycles.",
   },
   {
     code: "BUTCHER",
@@ -77,6 +77,7 @@ const developmentPriorities = [
   "Controlled pressure and motion",
   "Safe enclosed operation",
   "Shop-ready workflow integration",
+  "Low operator attention",
 ];
 
 const team = [
@@ -210,8 +211,10 @@ export default function Home() {
               Automated edge restoration for professional knife workflows.
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-[#c3b9a5] sm:text-xl">
-              Noera&apos;s system inspects blade geometry, identifies the edge, and guides a controlled sharpening
-              process that saves operator time.
+              Noera builds automated edge-restoration systems that inspect blade geometry,
+              identify the edge, and restore standard knives through controlled pressure,
+              angle, and motion.
+              
             </p>
             <p className="mt-5 max-w-xl font-mono text-xs uppercase leading-6 tracking-[0.18em] text-[#8f8877]">
               Built for sharpening shops, kitchens, butcher shops, and commercial knife-service operations.
@@ -272,7 +275,7 @@ export default function Home() {
               </h2>
               <p className="mt-7 text-base leading-8 text-[#bdb4a2]">
                 Noera&apos;s system is being developed to inspect blade geometry, identify the edge, and guide a
-                controlled sharpening process with more time saved per operator.
+                controlled sharpening process with less operator attention per knife.
               </p>
             </div>
             <div className="border border-[#39342b]">
@@ -374,7 +377,7 @@ export default function Home() {
           </h2>
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-[#bdb4a2]">
             A knife is shaped by use. Every sharpening changes it. Noera is built around a simple belief: the best
-            Noera believes that the best sharpening only removes what need to be removes, restores what needs to be
+            sharpening only removes what need to be removes, restores what needs to be
             restored, and leaves the tool closer to what it should be.
           </p>
         </div>
