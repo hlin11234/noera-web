@@ -196,14 +196,14 @@ function OpeningGraphic() {
         <defs>
           <linearGradient id="aweBlade" x1="363" x2="598" y1="112" y2="608">
             <stop stopColor="#fff8df" />
-            <stop offset=".34" stopColor="#81f7ff" stopOpacity=".82" />
-            <stop offset=".7" stopColor="#d4b162" stopOpacity=".7" />
-            <stop offset="1" stopColor="#f15a3b" stopOpacity=".62" />
+            <stop offset=".34" stopColor="#7dff95" stopOpacity=".82" />
+            <stop offset=".7" stopColor="#b6ff5f" stopOpacity=".7" />
+            <stop offset="1" stopColor="#18d86b" stopOpacity=".62" />
           </linearGradient>
           <linearGradient id="aweHotEdge" x1="284" x2="676" y1="596" y2="132">
-            <stop stopColor="#ff5337" />
-            <stop offset=".43" stopColor="#ffd166" />
-            <stop offset="1" stopColor="#7ff8ff" />
+            <stop stopColor="#00ff66" />
+            <stop offset=".43" stopColor="#b6ff5f" />
+            <stop offset="1" stopColor="#62ffb0" />
           </linearGradient>
           <filter id="aweGlow" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="5" result="blur" />
@@ -215,14 +215,14 @@ function OpeningGraphic() {
         </defs>
 
         <g className="awe-ring awe-ring-slow" filter="url(#aweGlow)">
-          <ellipse cx="480" cy="360" rx="286" ry="122" fill="none" stroke="#69f4ff" strokeOpacity=".5" strokeWidth="1.4" />
-          <ellipse cx="480" cy="360" rx="334" ry="158" fill="none" stroke="#d8b15a" strokeOpacity=".32" strokeWidth="1" strokeDasharray="18 16" />
+          <ellipse cx="480" cy="360" rx="286" ry="122" fill="none" stroke="#5eff8b" strokeOpacity=".5" strokeWidth="1.4" />
+          <ellipse cx="480" cy="360" rx="334" ry="158" fill="none" stroke="#b6ff5f" strokeOpacity=".32" strokeWidth="1" strokeDasharray="18 16" />
           <path d="M196 360 C252 240 374 178 480 178 C586 178 708 240 764 360" fill="none" stroke="#fff2c4" strokeOpacity=".36" strokeWidth="1.2" />
         </g>
 
         <g className="awe-ring awe-ring-fast" filter="url(#aweGlow)">
-          <ellipse cx="480" cy="360" rx="116" ry="322" fill="none" stroke="#ff6a3d" strokeOpacity=".42" strokeWidth="1.2" />
-          <ellipse cx="480" cy="360" rx="154" ry="360" fill="none" stroke="#78f7ff" strokeOpacity=".24" strokeWidth="1" strokeDasharray="10 18" />
+          <ellipse cx="480" cy="360" rx="116" ry="322" fill="none" stroke="#00ff66" strokeOpacity=".42" strokeWidth="1.2" />
+          <ellipse cx="480" cy="360" rx="154" ry="360" fill="none" stroke="#62ffb0" strokeOpacity=".24" strokeWidth="1" strokeDasharray="10 18" />
         </g>
 
         <g className="awe-core" filter="url(#aweGlow)">
@@ -233,12 +233,12 @@ function OpeningGraphic() {
         </g>
 
         <g className="awe-sparks" filter="url(#aweGlow)">
-          <path d="M122 358 H232" stroke="#ffd166" strokeWidth="2" strokeLinecap="round" />
-          <path d="M728 358 H842" stroke="#7ff8ff" strokeWidth="2" strokeLinecap="round" />
-          <path d="M238 156 L304 214" stroke="#ff6a3d" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M722 178 L646 238" stroke="#fff1b8" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M264 536 L330 486" stroke="#7ff8ff" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M690 528 L630 480" stroke="#ffd166" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M122 358 H232" stroke="#b6ff5f" strokeWidth="2" strokeLinecap="round" />
+          <path d="M728 358 H842" stroke="#62ffb0" strokeWidth="2" strokeLinecap="round" />
+          <path d="M238 156 L304 214" stroke="#00ff66" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M722 178 L646 238" stroke="#d7ff8a" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M264 536 L330 486" stroke="#62ffb0" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M690 528 L630 480" stroke="#b6ff5f" strokeWidth="1.5" strokeLinecap="round" />
         </g>
       </svg>
     </div>
