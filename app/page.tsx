@@ -281,7 +281,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
-                href="mailto:hunter.s.lin@gmail.com"
+                href="#contact"
                 className="inline-flex items-center justify-center border border-[#b49a6a] bg-[#b49a6a] px-5 py-3 font-mono text-xs uppercase tracking-[0.18em] text-[#15120d] transition hover:bg-[#d0b87f]"
               >
                 Contact Noera
@@ -461,7 +461,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-8 lg:px-10">
+      <section id="contact" className="px-5 py-20 sm:px-8 lg:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 border-y border-[#373126] py-12 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
             <SectionLabel number="08">Contact</SectionLabel>
