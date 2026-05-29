@@ -186,12 +186,72 @@ function TechnicalVisual() {
   );
 }
 
+function OpeningGraphic() {
+  return (
+    <div className="awe-graphic" aria-hidden="true">
+      <div className="awe-halo" />
+      <div className="awe-scan awe-scan-one" />
+      <div className="awe-scan awe-scan-two" />
+      <svg className="awe-svg" viewBox="0 0 960 720">
+        <defs>
+          <linearGradient id="aweBlade" x1="363" x2="598" y1="112" y2="608">
+            <stop stopColor="#fff8df" />
+            <stop offset=".34" stopColor="#81f7ff" stopOpacity=".82" />
+            <stop offset=".7" stopColor="#d4b162" stopOpacity=".7" />
+            <stop offset="1" stopColor="#f15a3b" stopOpacity=".62" />
+          </linearGradient>
+          <linearGradient id="aweHotEdge" x1="284" x2="676" y1="596" y2="132">
+            <stop stopColor="#ff5337" />
+            <stop offset=".43" stopColor="#ffd166" />
+            <stop offset="1" stopColor="#7ff8ff" />
+          </linearGradient>
+          <filter id="aweGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g className="awe-ring awe-ring-slow" filter="url(#aweGlow)">
+          <ellipse cx="480" cy="360" rx="286" ry="122" fill="none" stroke="#69f4ff" strokeOpacity=".5" strokeWidth="1.4" />
+          <ellipse cx="480" cy="360" rx="334" ry="158" fill="none" stroke="#d8b15a" strokeOpacity=".32" strokeWidth="1" strokeDasharray="18 16" />
+          <path d="M196 360 C252 240 374 178 480 178 C586 178 708 240 764 360" fill="none" stroke="#fff2c4" strokeOpacity=".36" strokeWidth="1.2" />
+        </g>
+
+        <g className="awe-ring awe-ring-fast" filter="url(#aweGlow)">
+          <ellipse cx="480" cy="360" rx="116" ry="322" fill="none" stroke="#ff6a3d" strokeOpacity=".42" strokeWidth="1.2" />
+          <ellipse cx="480" cy="360" rx="154" ry="360" fill="none" stroke="#78f7ff" strokeOpacity=".24" strokeWidth="1" strokeDasharray="10 18" />
+        </g>
+
+        <g className="awe-core" filter="url(#aweGlow)">
+          <path d="M480 96 L596 560 L480 626 L364 560 Z" fill="url(#aweBlade)" fillOpacity=".38" stroke="#fff1c0" strokeOpacity=".78" strokeWidth="2" />
+          <path d="M480 96 L480 626" stroke="#fff8df" strokeOpacity=".52" strokeWidth="1.2" />
+          <path d="M480 96 L596 560 M480 96 L364 560" stroke="url(#aweHotEdge)" strokeWidth="3" strokeLinecap="round" />
+          <path className="awe-pulse-edge" d="M480 96 L596 560 M480 96 L364 560" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" />
+        </g>
+
+        <g className="awe-sparks" filter="url(#aweGlow)">
+          <path d="M122 358 H232" stroke="#ffd166" strokeWidth="2" strokeLinecap="round" />
+          <path d="M728 358 H842" stroke="#7ff8ff" strokeWidth="2" strokeLinecap="round" />
+          <path d="M238 156 L304 214" stroke="#ff6a3d" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M722 178 L646 238" stroke="#fff1b8" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M264 536 L330 486" stroke="#7ff8ff" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M690 528 L630 480" stroke="#ffd166" strokeWidth="1.5" strokeLinecap="round" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#0b0b0a] text-[#e6dfcf]">
-      <section className="relative border-b border-[#27241f]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_8%,rgba(178,134,69,0.11),transparent_30%),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:auto,72px_72px]" />
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-8 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-10 lg:py-12">
+      <section className="relative min-h-screen border-b border-[#27241f]">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.026)_1px,transparent_1px)] bg-[size:72px_72px,72px_72px]" />
+        <OpeningGraphic />
+        <div className="relative mx-auto grid min-h-screen max-w-7xl gap-12 px-5 py-8 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-10 lg:py-12">
           <header className="flex items-center justify-between border-b border-[#312d26] pb-5 lg:col-span-2">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.32em] text-[#b49a6a]">Noera Labs</p>
